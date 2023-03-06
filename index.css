@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Composition */
+
+
+
+/* Utility */
+.text-cemter {
+    text-align: center;
+}
+
+
+/* Block */
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1f2937;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.nav-links {
+    align-self: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.a-1,
+.a-2 {
+    border-right: 3px solid red;
+    padding-right: 15px;
+}
+
+.a-1::before {
+    content: "日本の封建史";
+    display: block;
+    color: rgb(198, 198, 198);
+    text-align: center;
+}
+
+.a-2::before {
+    content: "戦士のイラスト";
+    display: block;
+    color: rgb(198, 198, 198);
+    text-align: center;
+}
+
+.a-3::before {
+    content: "新しい未来の先";
+    display: block;
+    color: rgb(198, 198, 198);
+    text-align: center;
+}
