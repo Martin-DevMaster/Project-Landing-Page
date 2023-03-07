@@ -9,15 +9,133 @@ body {
     max-height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 1.125rem;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
 }
 
 /* Composition */
+.flow>*+* {
+    margin-top: 3rem;
+}
 
+.first_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    margin: 0;
+    padding: 3rem 0 5rem 0;
+    gap: 1rem;
+}
+
+.second_section>*+* {
+    margin-top: 3rem;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 17%);
+    justify-content: center;
+    gap: 2rem;
+}
+
+.last-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f2937;
+    margin-inline: auto;
+    color: white;
+    padding: 3rem 2rem;
+    margin: 0 10rem;
+}
 
 
 /* Utility */
-.text-cemter {
+.text-center {
     text-align: center;
+}
+
+.padding-p {
+    padding: 0 1rem 0 0;
+}
+
+.margin-y {
+    margin: 0;
+}
+
+.p-fw {
+    opacity: 0.7;
+}
+
+.a-links-clr {
+    color: white;
+}
+
+.a-links-fs {
+    font-size: 1.3rem;
+}
+
+.btn-clr {
+    color: red;
+}
+
+.btn-clr-light {
+    color: white;
+}
+
+.btn-fw {
+    font-weight: bold;
+}
+
+.btn-padding {
+    padding: 0.5rem 1rem;
+}
+
+.btn-radius {
+    border-radius: 5px;
+}
+
+.btn-shadow:hover {
+    box-shadow: 0px 2px 15px 5px rgba(255, 0, 0, 0.45);
+    cursor: pointer;
+}
+
+.bottom-border {
+    border-bottom: 3px solid red;
+}
+
+.h2-border-width {
+    width: 30%;
+}
+
+.margin-inline-auto {
+    margin-inline: auto;
+}
+
+.section-bg-clr {
+    background-color: #e5e7eb;
+}
+
+.section-padding {
+    padding: 4rem 0 2rem 0;
+}
+
+.last-section-padding {
+    padding: 3rem 0 5rem 0;
+}
+
+.btn-bg {
+    background: transparent;
+}
+
+.btn-border-clr {
+    border-color: white;
 }
 
 
@@ -45,8 +163,6 @@ ul {
 
 a {
     text-decoration: none;
-    font-size: 25px;
-    color: white;
 }
 
 .a-1,
@@ -74,4 +190,72 @@ a {
     display: block;
     color: rgb(198, 198, 198);
     text-align: center;
+}
+
+.first_section_card {
+    width: 25rem;
+    color: white;
+}
+
+.intro_img {
+    width: 35rem;
+}
+
+.card-wrapper img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.card-wrapper span {
+    display: block;
+}
+
+.card-wrapper p {
+    font-size: 1rem;
+    width: 11rem;
+}
+
+.card-wrapper a {
+    color: red;
+}
+
+.quote-card {
+    width: 30rem;
+    margin-inline: auto;
+}
+
+.quote-card p {
+    text-align: end;
+    color: red;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.quote-card {
+    position: relative;
+}
+
+.quote-card::before {
+    content: open-quote;
+    color: red;
+    transform: scale(5);
+    position: absolute;
+    left: -5%;
+    top: -5%;
+}
+
+.quote-card::after {
+    content: close-quote;
+    color: red;
+    transform: scale(5);
+    position: absolute;
+    right: 18%;
+    bottom: 8%;
+}
+
+footer {
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 1.5rem 0;
 }
